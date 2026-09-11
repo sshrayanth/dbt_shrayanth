@@ -5,12 +5,15 @@ sources:
     tables:
       
       - name: regions
+        description: Raw data of region info
 
       - name: nations 
 
       - name: customers
 
       - name: suppliers
+
+      - name: lineitems
 
       - name: orders
         config:

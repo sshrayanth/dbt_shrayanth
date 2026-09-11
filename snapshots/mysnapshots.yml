@@ -1,0 +1,17 @@
+# snapshots:
+#  - name: orders_snapshot
+#   #  relation: source('src', 'orders')
+#      relation: ref('int_orders')
+
+#    config:
+#      unique_key: order_id
+#      strategy: timestamp
+#      updated_at: order_date
+
+snapshots:
+ - name: orders_snapshot
+   relation: ref('int_orders')
+   config:
+     unique_key: order_id
+     strategy: timestamp
+     updated_at: order_date

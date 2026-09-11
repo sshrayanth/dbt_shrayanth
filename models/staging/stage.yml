@@ -18,6 +18,7 @@
 
 models:
   - name: stg_nations
+    description: Table for nation's date
     columns:
       - name: nation_id
         data_tests:
@@ -35,10 +36,13 @@ models:
                 store_failures: true
 
   - name: stg_orders
+    description: order information table
     columns:
       - name: total_price
         data_tests:
-          - order_tests:
+          - order_values:
+            # description: testing order values
               config:
                 store_failures: true
 
+                
